@@ -31,3 +31,6 @@ def main():
 if __name__ == "__main__":
     main()
 
+# This is a simple auto-send script via Python code
+# with the ability to enter the subject and message
+#    of the email via the console.
