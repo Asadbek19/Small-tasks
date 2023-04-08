@@ -1,3 +1,4 @@
+
 shape_type = input('Please, provide a shape you want to calculate area: ')
 
 if shape_type == 'square':
@@ -34,3 +35,4 @@ elif shape_type == 'circle':
 
 else:
     print(f"I don't know {shape_type} shape :-(")
+
