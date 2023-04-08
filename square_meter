@@ -1,0 +1,36 @@
+shape_type = input('Please, provide a shape you want to calculate area: ')
+
+if shape_type == 'square':
+    a = input('side length: ')
+    if a.isdigit():
+        a = int(a)
+        s = a ** 2
+        print(f'square area: {s}')
+    else:
+        print(f'{a} is not a number ')
+
+elif shape_type == 'rectangle':
+    a = input('lenght:')
+    b = input('width:')
+    if a.isdigit():
+        a = int(a)
+        if b.isdigit():
+            b = int(b)
+            s = a * b
+            print(f'rectangle area: {s}')
+        else:
+            print(f'{b} is not a number ')
+    else:
+        print(f'{a} is not a number ')
+
+elif shape_type == 'circle':
+    r = input('radius:')
+    if r.isdigit():
+        r = int(r)
+        s = 3.14 * r ** 2
+        print(f'circle area: {s}')
+    else:
+        print(f'{r} is not a number')
+
+else:
+    print(f"I don't know {shape_type} shape :-(")
